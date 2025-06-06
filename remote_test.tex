@@ -1,0 +1,100 @@
+\documentclass[11pt]{article}
+
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{graphicx} % Required for inserting images
+
+\geometry{a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm}
+
+\linespread{1.2}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\begin{center}
+    \Large\textbf{Quantum Physics 1, Mid-term Examinaton}
+
+\vspace{1cm}
+\normalsize
+\fbox{\color{blue}\textsf{April 23rd, 2025, 200 points}}
+
+\vspace{0.5cm}
+\fbox{You can use the fact that $\int_{-\infty}^{\infty} dz \exp{[-az^2]} = \sqrt{\pi / a}, \quad  \text{Re}(a)>0$, and $\Gamma(1/2) = \sqrt{\pi}$.}
+\end{center}
+
+\textbf{Problem 1.} [50 points]
+
+Let us consider a Gaussian wave-packet wavefunction in one-dimension ($p_0,x_0,d>0$ are numbers below).
+\begin{equation*}
+    \psi (x) = \frac{1}{(2 \pi d^2 ) ^{1/4}} \exp{\left[ \frac{ip_0 x}{\hbar} - \frac{(x-x_0)^2}{4d^2} \right].}
+\end{equation*}
+
+Next recall that the deviation of some operator $\hat{A}$ (with expectation value specified in terms of wavefunction $\psi$) is defined by
+\begin{equation*}
+    \Delta \hat{A} \big|_{\psi} = \sqrt{ \langle ( \hat{A} - \langle \hat{A} \rangle )^2 \rangle } = \sqrt{ \langle \hat{A}^2 \rangle - \langle \hat{A} \rangle^2 }.
+\end{equation*}
+
+\begin{enumerate}[leftmargin=3.5em,itemsep=-3pt]
+    \item[(1)] [20 points] Now for the above wavefunction $\psi (x)$, compute $\langle \hat{x} \rangle$, $\langle \hat{p} \rangle$.
+    \item[(2)] [20 points] Similary, compute $\langle \hat{x}^2 \rangle$, $\langle \hat{p}^2 \rangle$.
+    \item[(3)] [10 points] Show that
+    \begin{equation*}
+        \Delta \hat{x} \big|_{\psi} \Delta \hat{p} \big|_{\psi} = \frac{\hbar}{2}.
+    \end{equation*}
+\end{enumerate}
+
+\textbf{Problem 2.} [60 points]
+
+\vspace{-4mm}
+\begin{enumerate}[leftmargin=3.5em,itemsep=-3pt]
+    \item[(1)] [30 points] An exponential of an operator $\hat{A}$ defined to be
+    \begin{equation*}
+        \exp[\hat{A}] \equiv \sum_{j=0}^{\infty} \frac{\hat{A}^j}{j!}.
+    \end{equation*}
+\end{enumerate} 
+
+\noindent
+Let us consider a wavefunction $\psi(x)$ which can be expanded into Taylor series. Find the action the following operator $\hat{L}$ on $\psi (x)$.
+\begin{equation*}
+    \hat{L} = \exp{\left[ ax \frac{d}{dx} \right]}, \quad a = \text{real.}
+\end{equation*}
+
+\begin{enumerate}[leftmargin=3.5em,itemsep=-3pt]
+    \item[(2)] [10 points] Consider an operator $\hat{S} = \alpha \hat{x} + i \hat{p}$, where $\alpha$ is a certain positive constant with the dimension of momentum/length. Find the zero eigenvalue (normalized) eigenfunction of $\hat{S}$ in \textit{position space}.
+    \item[(3)] [10 points] Find the zero eigenvalue (normalized) eigenfunction of $\hat{S}$ in \textit{momentum space}.
+    \item[(4)] [10 points] Compare the results of (2) and (3) and make a comment.
+\end{enumerate}
+
+\textbf{Problem 3.} [50 points]
+
+Consider an \underline{attractive} delta function potential $V(x) = -\gamma \delta(x)$ $(\gamma > 0 )$ in one-dimension. The particle mass is $m$ and let us look for the \textit{bound states}.
+\vspace{-4mm}
+
+\begin{enumerate}[leftmargin=3.5em,itemsep=-3pt]
+    \item[(1)] [30 points] Find the energy eigenvalues and the \underline{normalized} eigenfunctions,
+    \item[(2)] [20 points] Find the expectation value of \textit{kinetic energy} and \textit{potential energy} of the bound state wavefunctions.
+\end{enumerate}
+
+\newpage
+
+\thispagestyle{empty}
+\textbf{Problem 4.} [40 points]
+
+We have a one-dimensional potential step:
+\begin{equation*}
+    V(x) = 0, \ x<0, \quad V(x) = V_0, \ x \geq 0, \quad V_0 >0.
+\end{equation*}
+
+The boundary condition is such that the particle is \underline{coming from the left}.
+
+\vspace{-4mm}
+\begin{enumerate}[leftmargin=3.5em,itemsep=-3pt]
+    \item[(1)] [30 points] Find the energy eigenvalues and the eigenfunctions for the energy $E \geq V_0$. You \textbf{don't} have to normalize the eigenfunctions.
+    \item[(2)] [10 points] Compute the probability current density everywhere in space. Is it continuous at $x=0$?
+\end{enumerate}
+\end{document}
