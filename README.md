@@ -1,2 +1,4 @@
 # git-practice
-Git 사용 연습장
+Git과 GitHub의 실습을 위한 연습장
+
+- Last Update : 2025. 06. 06.
